@@ -14,7 +14,7 @@ Patch Match ([Barnes et al.](https://gfx.cs.princeton.edu/pubs/Barnes_2009_PAR/)
 
 | **Patch Match Overview**                                     | **Patch Match Steps**                                        |
 | :----------------------------------------------------------- | ------------------------------------------------------------ |
-| <img src="./readme_images/original_patch_match.png" style="zoom:150%;" /> | <img src="readme_images/original_patch_match_steps.png" style="zoom:150%;" /> |
+| <img src="../readme_images/original_patch_match.png" style="zoom:150%;" /> | <img src="../readme_images/original_patch_match_steps.png" style="zoom:150%;" /> |
 
 
 <a name="DifferentiablePatchMatch"></a>
@@ -31,11 +31,11 @@ Patch Match ([Barnes et al.](https://gfx.cs.princeton.edu/pubs/Barnes_2009_PAR/)
 We replace the non-differentiable argmax during evaluation with differentiable softmax.
 
 <p align="center">
-<img src="readme_images/softmax.png" width="20%" />
+<img src="../readme_images/softmax.png" width="20%" />
 </p>
 
 <p>
-<img src="readme_images/DPM.png" width="40%" /><img src="readme_images/DPM_filters.png" width="50%" />
+<img src="../readme_images/DPM.png" width="40%" /><img src="../readme_images/DPM_filters.png" width="50%" />
 </p>   
 
 
@@ -68,11 +68,11 @@ We replace the non-differentiable argmax during evaluation with differentiable s
 
 | Image A | Image B |
 | :-----: | :-----: |
-| <img src="readme_images/DPM_reconstruction/ImageA/Never back down 1032.png" alt="Never back down 1032" width= "100%" />         |  <img src="readme_images/DPM_reconstruction/ImageB/Never back down 1213.png" alt="Never back down 1213" width= "100%" />        |
-| <img src="readme_images/DPM_reconstruction/ImageA/Never back down 1979.png" alt="Never back down 1979" width= "100%" />         |  <img src="readme_images/DPM_reconstruction/ImageB/Never back down 2040.png" alt="Never back down 2040" width= "100%" />        |
-| <img src="readme_images/DPM_reconstruction/ImageA/Never back down 2046.png" alt="Never back down 2046" width= "100%" />         |  <img src="readme_images/DPM_reconstruction/ImageB/Never back down 2066.png" alt="Never back down 2066" width= "100%" />        |
-| <img src="readme_images/DPM_reconstruction/ImageA/cheetah1.png" alt="cheetah" width= "100%" />         |  <img src="readme_images/DPM_reconstruction/ImageB/cheetah2.png" alt="cheetah2" width= "60%" />        |
-| <img src="readme_images/DPM_reconstruction/ImageA/face1.png" alt="cheetah" width= "60%" />         |  <img src="readme_images/DPM_reconstruction/ImageB/face2.png" alt="cheetah2" width= "60%" />        |
+| <img src="../readme_images/DPM_reconstruction/ImageA/Never back down 1032.png" alt="Never back down 1032" width= "100%" />         |  <img src="../readme_images/DPM_reconstruction/ImageB/Never back down 1213.png" alt="Never back down 1213" width= "100%" />        |
+| <img src="../readme_images/DPM_reconstruction/ImageA/Never back down 1979.png" alt="Never back down 1979" width= "100%" />         |  <img src="../readme_images/DPM_reconstruction/ImageB/Never back down 2040.png" alt="Never back down 2040" width= "100%" />        |
+| <img src="../readme_images/DPM_reconstruction/ImageA/Never back down 2046.png" alt="Never back down 2046" width= "100%" />         |  <img src="../readme_images/DPM_reconstruction/ImageB/Never back down 2066.png" alt="Never back down 2066" width= "100%" />        |
+| <img src="../readme_images/DPM_reconstruction/ImageA/cheetah1.png" alt="cheetah" width= "100%" />         |  <img src="../readme_images/DPM_reconstruction/ImageB/cheetah2.png" alt="cheetah2" width= "60%" />        |
+| <img src="../readme_images/DPM_reconstruction/ImageA/face1.png" alt="cheetah" width= "60%" />         |  <img src="../readme_images/DPM_reconstruction/ImageB/face2.png" alt="cheetah2" width= "60%" />        |
 
 
 
@@ -94,11 +94,11 @@ We replace the non-differentiable argmax during evaluation with differentiable s
 
 | Differentiable Patch Match | Patch Match |
 | :-----: | :-----: |
-| <img src="readme_images/DPM_reconstruction/DPM/Never back down 1032.png" alt="Never back down 1032" width="100%" />         |  <img src="readme_images/DPM_reconstruction/PM/Never back down 1032.png" alt="Never back down 1213" width="100%" />     |
-| <img src="readme_images/DPM_reconstruction/DPM/Never back down 1979.png" alt="Never back down 1032" width="100%" />         |  <img src="readme_images/DPM_reconstruction/PM/Never back down 1979.png" alt="Never back down 1213" width="100%" />        |
-| <img src="readme_images/DPM_reconstruction/DPM/Never back down 2046.png" alt="Never back down 1032" width="100%" />         |  <img src="readme_images/DPM_reconstruction/PM/Never back down 2046.png" alt="Never back down 1213" width="100%" />        |
-| <img src="readme_images/DPM_reconstruction/DPM/cheetah1.png" alt="Never back down 1032" width="100%" />         |  <img src="readme_images/DPM_reconstruction/PM/cheetah1.png" alt="Never back down 1213" width="100%" />        |
-| <img src="readme_images/DPM_reconstruction/DPM/face1.png" alt="Never back down 1032" width="60%" />         |  <img src="readme_images/DPM_reconstruction/PM/face.png" alt="Never back down 1213" width="60%" />  |
+| <img src="../readme_images/DPM_reconstruction/DPM/Never back down 1032.png" alt="Never back down 1032" width="100%" />         |  <img src="../readme_images/DPM_reconstruction/PM/Never back down 1032.png" alt="Never back down 1213" width="100%" />     |
+| <img src="../readme_images/DPM_reconstruction/DPM/Never back down 1979.png" alt="Never back down 1032" width="100%" />         |  <img src="../readme_images/DPM_reconstruction/PM/Never back down 1979.png" alt="Never back down 1213" width="100%" />        |
+| <img src="../readme_images/DPM_reconstruction/DPM/Never back down 2046.png" alt="Never back down 1032" width="100%" />         |  <img src="../readme_images/DPM_reconstruction/PM/Never back down 2046.png" alt="Never back down 1213" width="100%" />        |
+| <img src="../readme_images/DPM_reconstruction/DPM/cheetah1.png" alt="Never back down 1032" width="100%" />         |  <img src="../readme_images/DPM_reconstruction/PM/cheetah1.png" alt="Never back down 1213" width="100%" />        |
+| <img src="../readme_images/DPM_reconstruction/DPM/face1.png" alt="Never back down 1032" width="60%" />         |  <img src="../readme_images/DPM_reconstruction/PM/face.png" alt="Never back down 1213" width="60%" />  |
 
 
 
