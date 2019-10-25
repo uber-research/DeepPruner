@@ -2,13 +2,11 @@
 
 This repository releases code for our paper [DeepPruner: Learning Efficient Stereo Matching via Differentiable PatchMatch](https://arxiv.org/abs/1909.05845).
 
-This repository conatins:
-
 ##### Table of Contents  
 [DeepPruner](#DeepPruner)  
 [Differentiable Patch Match](#DifferentiablePatchMatch)  
 [Requirements (Major Dependencies)](#Requirements)  
-[Citations](#Citation)  
+[Citation](#Citation)  
 
 
   <a name="DeepPruner"></a>
@@ -69,7 +67,7 @@ More details in the corresponding folder README.
 <a name="Requirements"></a>
 ## Requirements (Major Dependencies)
 + Pytorch (0.4.0+)
-+ Python2.7 (or Python3)
++ Python2.7
 + torchvision (0.2.0+)
 
 

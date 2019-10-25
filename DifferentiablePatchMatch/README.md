@@ -5,7 +5,7 @@
 [Differentiable Patch Match](#DifferentiablePatchMatch)  
 [Differentiable Patch Match vs Patch Match for Image Reconstruction](#Comparison)  
 [Run Command](#run_command)  
-[Citations](#citation)  
+[Citation](#citation)  
 
 <a name="PatchMatch"></a>
 ## PatchMatch
