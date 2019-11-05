@@ -180,7 +180,7 @@ class Propagation(nn.Module):
                                                    disparity_samples.size()[2],
                                                    disparity_samples.size()[3])
 
-        if type is "horizontal":
+        if propagation_type is "horizontal":
             label = torch.arange(0, self.filter_size, device=device).repeat(self.filter_size).view(
                 self.filter_size, 1, 1, 1, self.filter_size)
 
@@ -253,7 +253,7 @@ class PatchMatch(nn.Module):
             min_disp_tensor.size()[3])
 
         for prop_iter in range(iteration_count):
-            normalized_disparity_samples = self.propagation(normalized_disparity_samples, device, 1)
+            normalized_disparity_samples = self.propagation(normalized_disparity_samples, device, propagation_type="horizontal")
             disparity_samples = normalized_disparity_samples * \
                 (max_disparity - min_disparity) * multiplier + min_disp_tensor
 
@@ -262,7 +262,7 @@ class PatchMatch(nn.Module):
                                                                             disparity_samples,
                                                                             normalized_disparity_samples)
 
-            normalized_disparity_samples = self.propagation(normalized_disparity_samples, device, 0)
+            normalized_disparity_samples = self.propagation(normalized_disparity_samples, device, propagation_type="vertical")
             disparity_samples = normalized_disparity_samples * \
                 (max_disparity - min_disparity) * multiplier + min_disp_tensor
 
