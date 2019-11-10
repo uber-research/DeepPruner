@@ -55,7 +55,7 @@ config = {
     },
 
     "post_CRP_sample_count": 7,
-    "post_CRP_sampler_type": "uniform", #change to patchmatch for Sceneflow model. 
+    "post_CRP_sampler_type": "uniform", #change to patch_match for Sceneflow model. 
 
     "hourglass_inplanes": 16
 }

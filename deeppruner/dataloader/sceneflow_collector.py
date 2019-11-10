@@ -102,7 +102,7 @@ def dataloader(filepath_monkaa, filepath_flying, filepath_driving):
         driving_dir = os.path.join(filepath_driving, 'driving_frames_cleanpass/')
         driving_disp = os.path.join(filepath_driving, 'driving_disparity/')
 
-        subdir1 = ['15mm_focallength', '15mm_focallength']
+        subdir1 = ['35mm_focallength', '15mm_focallength']
         subdir2 = ['scene_backwards', 'scene_forwards']
         subdir3 = ['fast', 'slow']
 
