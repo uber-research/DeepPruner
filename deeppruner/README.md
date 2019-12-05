@@ -95,9 +95,16 @@ KITTI 2015 has 200 stereo-pairs with ground truth disparities. We used 160 out o
   + --val_datapath_2015 (default: None): If not set, the script would fail. The validation dataset should have atleast one image to run.
   + --datapath_2012 (default: None): If not set, KITTI stereo 2012 dataset won't be used for training.4. Training and validation tensorboard runs will be saved in **'./runs/' directory**.
 
-#### Evaluation Command:
-1. We used KITTI 2015 Stereo testing set for evaluation. (Note any other dataset could be used.)
-2. Evaluation command:
+#### Evaluation Command (On Any Dataset):
+1. We used KITTI 2015 Stereo testing set for evaluation. **(Note any other dataset could be used.)**
+2. To evaluate DeepPruner on any dataset, just create a base directory like:	
+  > test_directory \
+  >       |----- image_2 \
+  >       |----- image_3
+
+image_2 folder holds the left images, while image_3 folder holds the right images.
+
+3. Evaluation command:
 
    > python submission_kitti.py \
    > --loadmodel <path_to_trained_model> \
