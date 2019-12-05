@@ -99,7 +99,7 @@ KITTI 2015 has 200 stereo-pairs with ground truth disparities. We used 160 out o
 1. We used KITTI 2015 Stereo testing set for evaluation. (Note any other dataset could be used.)
 2. Evaluation command:
 
-   > python finetune_kitti.py \
+   > python submission_kitti.py \
    > --loadmodel <path_to_trained_model> \
    > --save_dir <director_to_store_disparity_output> \
    > --datapath <test_directory>  

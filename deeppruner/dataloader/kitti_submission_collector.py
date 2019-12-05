@@ -22,9 +22,9 @@ def datacollector(filepath):
     right_fold = 'image_3/'
     disp = 'disp_occ_0/'
 
-    image = [img for img in sorted(os.listdir(filepath + left_fold)) if img.find('.png') > -1]
+    image = [img for img in sorted(os.listdir(os.path.join(filepath,left_fold))) if img.find('.png') > -1]
 
-    left_test = [filepath + left_fold + img for img in image]
-    right_test = [filepath + right_fold + img for img in image]
+    left_test = [os.path.join(filepath, left_fold, img) for img in image]
+    right_test = [os.path.join(filepath, right_fold, img) for img in image]
 
     return left_test, right_test

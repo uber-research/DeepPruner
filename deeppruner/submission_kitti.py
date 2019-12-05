@@ -69,9 +69,9 @@ if args.cuda:
 test_left_img, test_right_img = ls.datacollector(args.datapath)
 
 model = DeepPruner()
-
+model = nn.DataParallel(model)
+    
 if args.cuda:
-    model = nn.DataParallel(model)
     model.cuda()
 
 logging.info('Number of model parameters: {}'.format(sum([p.data.nelement() for p in model.parameters()])))

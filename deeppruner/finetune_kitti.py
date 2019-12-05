@@ -89,10 +89,10 @@ TestImgLoader = torch.utils.data.DataLoader(
 
 model = DeepPruner()
 writer = SummaryWriter()
-
+model = nn.DataParallel(model)
+    
 
 if args.cuda:
-    model = nn.DataParallel(model)
     model.cuda()
 
 if args.loadmodel is not None:
