@@ -104,7 +104,9 @@ KITTI 2015 has 200 stereo-pairs with ground truth disparities. We used 160 out o
 
 image_2 folder holds the left images, while image_3 folder holds the right images.
 
-3. Evaluation command:
+3. For evaluation, update the "mode" parameter in "models.config.py" to "evaluation".
+
+4. Evaluation command:
 
    > python submission_kitti.py \
    > --loadmodel <path_to_trained_model> \

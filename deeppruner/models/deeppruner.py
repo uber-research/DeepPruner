@@ -27,7 +27,6 @@ from models.config import config as args
 class DeepPruner(SubModule):
     def __init__(self):
         super(DeepPruner, self).__init__()
-       
         self.scale = args.cost_aggregator_scale
         self.max_disp = args.max_disp // self.scale
         self.mode = args.mode
@@ -92,6 +91,9 @@ class DeepPruner(SubModule):
                                                      self.patch_match_sample_count + 2, 5, 1, 2, dilation=1, bias=True)
         self.max_disparity_features_conv = convbn_2d_lrelu(self.patch_match_sample_count + 2,
                                                      self.patch_match_sample_count + 2, 5, 1, 2, dilation=1, bias=True)
+
+        self.weight_init()
+
 
     def generate_search_range(self, left_input, sample_count, stage,
                               input_min_disparity=None, input_max_disparity=None):
