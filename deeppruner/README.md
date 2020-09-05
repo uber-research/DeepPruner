@@ -17,7 +17,7 @@ This is the code repository for **DeepPruner: Learning Efficient Stereo Matching
 <a name="Requirements"></a>
 ## Requirements
 
-+ Pytorch (0.4.0+)
++ Pytorch (0.4.1+)
 + python (2.7)
 + scikit-image
 + tensorboardX
