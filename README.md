@@ -66,7 +66,7 @@ More details in the corresponding folder README.
 
 <a name="Requirements"></a>
 ## Requirements (Major Dependencies)
-+ Pytorch (0.4.0+)
++ Pytorch (0.4.1+)
 + Python2.7
 + torchvision (0.2.0+)
 
